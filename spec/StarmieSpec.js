@@ -15,7 +15,7 @@ describe('starmie', function() {
   });
 
   it('should have a step function that makes its node animate2', function() {
-    sinon.spy(starmie.$node, 'INSERT ANIMATION HERE');
+    sinon.spy(starmie.$node, 'spin');
     starmie.step();
     expect(starmie.$node.toggle.called).to.be.true;
   });
