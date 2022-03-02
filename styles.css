@@ -41,7 +41,7 @@ body, a:link, a:visited, a:active{
 #starmie {
   width: 60px;
   height: auto;
-  animation: spin 1s linear infinite;
+  /* animation: spin 1s linear infinite; */
 }
 @keyframes shake {
 	0% { transform: translate(2px, 1px) rotate(0deg); }

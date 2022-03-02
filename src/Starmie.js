@@ -9,5 +9,8 @@ Starmie.prototype.constructor = Starmie;
 Starmie.prototype.step = function() {
   // function on this.$node to spin
   MakeDancer.prototype.step.call(this);
+  this.$node.css({
+    'animation': 'spin 1s linear infinite'});
+
 };
 // APPEND TO HTML

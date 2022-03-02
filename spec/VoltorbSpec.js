@@ -14,10 +14,10 @@ describe('voltorb', function() {
     expect(voltorb.$node).to.be.an.instanceof(jQuery);
   });
 
-  it('should have a step function that makes its node animate2', function() {
-    sinon.spy(voltorb.$node, 'INSERT ANIMATION HERE');
+  it('should have a step function that makes its node css', function() {
+    sinon.spy(voltorb.$node, 'css');
     voltorb.step();
-    expect(voltorb.$node.toggle.called).to.be.true;
+    expect(voltorb.$node.css.called).to.be.true;
   });
 
   describe('dance', function() {

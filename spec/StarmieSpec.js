@@ -14,10 +14,10 @@ describe('starmie', function() {
     expect(starmie.$node).to.be.an.instanceof(jQuery);
   });
 
-  it('should have a step function that makes its node animate2', function() {
-    sinon.spy(starmie.$node, 'spin');
+  it('should have a step function that makes its node css', function() {
+    sinon.spy(starmie.$node, 'css');
     starmie.step();
-    expect(starmie.$node.toggle.called).to.be.true;
+    expect(starmie.$node.css.called).to.be.true;
   });
 
   describe('dance', function() {
